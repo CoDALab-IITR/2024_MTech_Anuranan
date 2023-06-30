@@ -1,13 +1,13 @@
-from qiskit import QuantumCircuit
-from qiskit import *
-from mqt import qmap
+from qiskit import QuantumCircuit #qiskit files
+from qiskit import *              #qiskit files
+from mqt import qmap              #mqt tool mapping files of qmap
 
-arch = qmap.Architecture(5,{
+arch = qmap.Architecture(5,{      #5 qubit quantum architecture
     (1, 0), (2, 0), 
     (2, 1), (3, 2), 
     (3, 4), (2, 4)})
 
-qasm_str1 = """
+qasm_str1 = """                   #quantum circuit 1
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -40,7 +40,7 @@ cx q[4],q[1];
 cx q[0],q[4];
 cx q[4],q[0]; """
 
-qasm_str2 = """
+qasm_str2 = """                   #quantum circuit 2
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -70,7 +70,7 @@ h q[0];
 cx q[0],q[4];
 """
 
-qasm_str3 = """
+qasm_str3 = """                   #quantum circuit 3
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -113,7 +113,7 @@ h q[2];
 cx q[1],q[2];
 """
 
-qasm_str4 = """
+qasm_str4 = """                   #quantum circuit 4
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -138,7 +138,7 @@ cx q[4],q[0];
 cx q[0],q[4];
 """
 
-qasm_str5 = """
+qasm_str5 = """                   #quantum circuit 5
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -213,7 +213,7 @@ h q[0];
 x q[4];
 """
 
-qasm_str6 = """
+qasm_str6 = """                   #quantum circuit 6
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -286,7 +286,7 @@ h q[4];
 cx q[0],q[4];
 """
 
-qasm_str7 = """
+qasm_str7 = """                   #quantum circuit 7
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -376,7 +376,7 @@ cx q[2],q[3];
 h q[1];
 """
 
-qasm_str8 = """
+qasm_str8 = """                   #quantum circuit 8
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -474,7 +474,7 @@ cx q[2],q[1];
 h q[4];
 """
 
-qasm_str9 = """
+qasm_str9 = """                   #quantum circuit 9
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -516,7 +516,7 @@ cx q[0],q[3];
 h q[4];
 """
 
-qasm_str10 = """
+qasm_str10 = """                  #quantum circuit 10
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -543,16 +543,16 @@ cx q[1],q[2];
 h q[4];
 """
 
-circuits = [qasm_str1, qasm_str2, qasm_str3, qasm_str4, qasm_str5, qasm_str6, qasm_str7, qasm_str8, qasm_str9, qasm_str10]
+circuits = [qasm_str1, qasm_str2, qasm_str3, qasm_str4, qasm_str5, qasm_str6, qasm_str7, qasm_str8, qasm_str9, qasm_str10]   #list of quantum circuits
 
 c=1
-for i in circuits:
+for i in circuits:                                                               #automation of generating multiple test cases
     print("initial circuit ",c)
-    circ = QuantumCircuit.from_qasm_str(i)
-    print(circ)
+    circ = QuantumCircuit.from_qasm_str(i)                                       #converting test cases into quantum circuits
+    print(circ)                                                                  #visualizing quantum circuits
     print("\n")
-    print("heuristic circuit ",c)
-    qc_m , res = qmap.compile(circ, arch , method="heuristic")
-    print(qc_m)
+    print("heuristic circuit ",c)    
+    qc_m , res = qmap.compile(circ, arch, method="heuristic")                    #converting quantum circuits into heuristic mapping in 5 qubit quantum architecture
+    print(qc_m)                                                                  #visualizing quantum circuits as heuristic mapping
     print("\n\n\n\n\n")
     c+=1
