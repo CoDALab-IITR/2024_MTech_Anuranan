@@ -7,7 +7,8 @@ arch = qmap.Architecture(5,{      #5 qubit quantum architecture
     (2, 1), (3, 2), 
     (3, 4), (2, 4)})
 
-qasm_str1 = """                   #quantum circuit 1
+                                  #quantum circuit 1
+qasm_str1 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -40,7 +41,8 @@ cx q[4],q[1];
 cx q[0],q[4];
 cx q[4],q[0]; """
 
-qasm_str2 = """                   #quantum circuit 2
+                                  #quantum circuit 2
+qasm_str2 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -70,7 +72,8 @@ h q[0];
 cx q[0],q[4];
 """
 
-qasm_str3 = """                   #quantum circuit 3
+                                  #quantum circuit 3
+qasm_str3 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -113,7 +116,8 @@ h q[2];
 cx q[1],q[2];
 """
 
-qasm_str4 = """                   #quantum circuit 4
+                                  #quantum circuit 4
+qasm_str4 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -138,7 +142,8 @@ cx q[4],q[0];
 cx q[0],q[4];
 """
 
-qasm_str5 = """                   #quantum circuit 5
+                                  #quantum circuit 5
+qasm_str5 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -213,7 +218,8 @@ h q[0];
 x q[4];
 """
 
-qasm_str6 = """                   #quantum circuit 6
+                                  #quantum circuit 6
+qasm_str6 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -286,7 +292,8 @@ h q[4];
 cx q[0],q[4];
 """
 
-qasm_str7 = """                   #quantum circuit 7
+                                  #quantum circuit 7
+qasm_str7 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -376,7 +383,8 @@ cx q[2],q[3];
 h q[1];
 """
 
-qasm_str8 = """                   #quantum circuit 8
+                                  #quantum circuit 8
+qasm_str8 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -474,7 +482,8 @@ cx q[2],q[1];
 h q[4];
 """
 
-qasm_str9 = """                   #quantum circuit 9
+                                  #quantum circuit 9
+qasm_str9 = """                   
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
@@ -516,7 +525,8 @@ cx q[0],q[3];
 h q[4];
 """
 
-qasm_str10 = """                  #quantum circuit 10
+                                  #quantum circuit 10
+qasm_str10 = """                  
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[16];
