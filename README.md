@@ -10,6 +10,6 @@ Code description:
 
  iv. Loop for generating visualization of quantum circuits from input file.
 
- vi. Loop for generating visualization of quantum circuits as heuristic mapping method from input file.
+ v. Loop for generating visualization of quantum circuits as heuristic mapping method from input file.
 
- vii. Storing visualization in output file.
+ vi. Storing visualization in output file.
