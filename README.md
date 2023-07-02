@@ -6,10 +6,10 @@ Code description:
  
  ii. Manual arbitrary random 5 qubit quantum architecture.
  
- iii. 10 qasm benchmark quantum circuits.
+ iii. 10 qasm benchmark quantum circuits stored in input file.
 
- iv. Quantum circuits grouped into list.
+ iv. Loop for generating visualization of quantum circuits from input file.
 
- v. Loop for generating visualization of quantum circuits from list.
+ vi. Loop for generating visualization of quantum circuits as heuristic mapping method from input file.
 
- vi. Loop for generating visualization of quantum circuits as heuristic mapping method from list.
+ vii. Storing visualization in output file.
