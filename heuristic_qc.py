@@ -7,7 +7,7 @@ arch = qmap.Architecture(5,{                 #5 qubit manual random arbitrary qu
     (2, 1), (3, 2), 
     (3, 4), (2, 4)})
 
-with open("qc1.txt") as f:                   #input file of quantum circuit is called
+with open("qc1.txt") as f:                   #quantum circuit is called
     f = f.read()                             #convert .txt file into string format
     n = len(f)                               
 qc1 = f[0:n]                                 #quantum circuit is stored in string format
