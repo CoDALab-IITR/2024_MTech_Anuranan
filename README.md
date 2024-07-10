@@ -1,6 +1,6 @@
 Flowchart:-
 
-Create a CSV file for the required state consisting of the district name and coordinates.
+Create a CSV file for the required state consisting of the district name and coordinates stored in initial folder.
 
 Inventory data:
 IMD, US-NOAA.
