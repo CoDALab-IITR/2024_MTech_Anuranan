@@ -38,9 +38,12 @@ Order of code execution:
 4th testing
 
 CMIP6 extraction:
+For CMIP6 datasets, I directly downloaded them from https://zendo.org/record/3987736.
 
 CMIP6 conversion code:
+Follow the same procedure of inventory.
 
 CMIP6 drought indices code:
+Follow the same procedure of inventory.
 
 CMIP6 testing code:
