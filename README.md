@@ -5,7 +5,7 @@ Create a CSV file for the required state consisting of the district name and coo
 Inventory data:
 IMD, US-NOAA.
 
-IMD:
+Datasets>Inventory>IMD:
 
 Order of code execution:
 1st extraction
