@@ -47,3 +47,4 @@ CMIP6 drought indices code:
 Follow the same procedure of inventory.
 
 CMIP6 testing code:
+I haven't created different files for all the models. Instead, edited in one file only. Just change the model code as required. After training the models from the inventory code, I used that model for testing with the CMIP6 dataset instead of re-training with the CMIP6 dataset again.
